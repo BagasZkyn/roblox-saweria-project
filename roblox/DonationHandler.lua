@@ -14,7 +14,7 @@ local Players = game:GetService("Players")
 
 -- KONFIGURASI - GANTI INI!
 local WEBHOOK_URL = "https://your-project.vercel.app/api/webhook/poll"
-local WEBHOOK_SECRET = "your-secret-key-here-change-this" -- Harus sama dengan di Vercel
+local WEBHOOK_SECRET = "EFD4E4DD75CD682EC61A12D4ED5ED" -- Harus sama dengan di Vercel
 local POLL_INTERVAL = 5 -- Polling setiap 5 detik (jangan terlalu cepat!)
 
 -- RemoteEvent untuk komunikasi dengan client
