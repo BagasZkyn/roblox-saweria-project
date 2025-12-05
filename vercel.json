@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/webhook.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/webhook",
+      "methods": ["POST", "OPTIONS"],
+      "dest": "/api/webhook.js"
+    },
+    {
+      "src": "/api/webhook/poll",
+      "methods": ["GET", "OPTIONS"],
+      "dest": "/api/webhook.js"
+    },
+    {
+      "src": "/api/webhook/health",
+      "methods": ["GET"],
+      "dest": "/api/webhook.js"
+    }
+  ],
+  "env": {
+    "STREAM_KEY": "@stream-key",
+    "WEBHOOK_SECRET": "@webhook-secret",
+    "RATE_LIMIT_WINDOW": "60000",
+    "MAX_REQUESTS_PER_WINDOW": "10"
+  }
+}
