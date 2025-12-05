@@ -10,17 +10,17 @@
     {
       "src": "/api/webhook",
       "methods": ["POST", "OPTIONS"],
-      "dest": "/api/webhook.js"
+      "dest": "api/webhook"
     },
     {
       "src": "/api/webhook/poll",
       "methods": ["GET", "OPTIONS"],
-      "dest": "/api/webhook.js"
+      "dest": "api/webhook"
     },
     {
       "src": "/api/webhook/health",
       "methods": ["GET"],
-      "dest": "/api/webhook.js"
+      "dest": "api/webhook"
     }
   ]
 }
